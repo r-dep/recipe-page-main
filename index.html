@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Recipe page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    *{
+      box-sizing: border-box;
+    }
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    #img1{
+      width: 100%;
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+      border-radius: 15px;
+    }
+    @font-face {
+      font-family: outfit-black;
+      src: url(assets/fonts/outfit/static/Outfit-Black.ttf);
+    }
+    @font-face {
+      font-family: outfit-bold;
+      src: url(assets/fonts/outfit/static/Outfit-Bold.ttf);
+    }
+    @font-face {
+      font-family: outfit-semibold;
+      src: url(assets/fonts/outfit/static/Outfit-SemiBold.ttf);
+    }
+    @font-face {
+      font-family: outfit-Extrabold;
+      src: url(assets/fonts/outfit/static/Outfit-extrabold.ttf);
+    }
+    @font-face {
+      font-family: outfit-extralight;
+      src: url(assets/fonts/outfit/static/Outfit-ExtraLight.ttf);
+    }
+    @font-face {
+      font-family: outfit-light;
+      src: url(assets/fonts/outfit/static/Outfit-light.ttf);
+    }
+    @font-face {
+      font-family: outfit-medium;
+      src: url(assets/fonts/outfit/static/Outfit-medium.ttf);
+    }
+    @font-face {
+      font-family: outfit-regular;
+      src: url(assets/fonts/outfit/static/Outfit-Regular.ttf);
+    }
+    @font-face {
+      font-family: outfit-semibold;
+      src: url(assets/fonts/outfit/static/Outfit-semibold.ttf);
+    }
+    @font-face {
+      font-family: outfit-thin;
+      src: url(assets/fonts/outfit/static/Outfit-thin.ttf);
+    }
+    @font-face {
+      font-family: outfit-variablefont;
+      src: url(assets/fonts/outfit/Outfit-VariableFont_wght.ttf);
+    }
+    @font-face {
+      font-family: Young-serf;
+      src: url(assets/fonts/young-serif/YoungSerif-Regular.ttf);
+    }
+    body{
+      background-color: #F3E5D8;
+      font-family: outfit-thin;
+      font-weight: 600;
+      color: hsl(0, 0%,35%);
+      cursor:default;
+      transition: 2s;
+    }
+    #box{
+      background-color: #FFF7FC;
+      padding: 20px;
+      border-radius: 20px;
+      transition: 2s;
+    }
+    #container{
+      background-color: white;
+      padding: 50px;
+      border-radius: 15px;
+      margin: 10% 20%;
+      padding-bottom: 10px;
+      transition: 2s;
+    }
+    #h{
+      font-family: young-serf;
+      font-size: 3.5em;
+      transition: 2s;
+    }
+    h2{
+      color:hsl(25, 75%, 27%); 
+      font-size: 40px;
+    }
+    .head{
+      font-family: outline-bold;
+    }
+    h3{
+      color: hsl(323, 48%, 45%);  
+      font-family: outfit-bold;  
+      font-size: 30px;
+    }
+    strong{
+      font-family: outfit-semibold;
+      color: hsl(0, 0%,35%);
+    }
+    table{
+      width: 100%;
+      border-collapse: collapse;
+    }
+    td,th{
+    border-bottom: 1px solid hsl(0, 0%,45%); 
+    padding-bottom: 15px;
+    padding-top: 15px;
+    padding-left: 20px;
+    padding-right: 50px;
+    }
+    p,li{
+      font-size: 22px;
+    }
+    th{
+      color: hsl(323, 48%, 45%);  
+      font-family: outfit-semibold;
+    }
+    @media (max-width:700px) {
+      body{
+        margin: 0;
+        margin-right: 0;
+        padding-right: 0;
+        transition: 2s;
+      }
+      #container{
+        margin:0;
+        border-radius: 0;
+        transition: 1s;
+        margin-right: 0;
+      }
+      td{
+        font-size: larger;
+        padding-left: 80px;
+        font-size: 20px;
+        transition: 2s;
+      }
+      th{
+        font-size: 20px;
+        color: hsl(25, 75%, 27%);
+        transition: 2s;
+      }
+      #img1{
+        position: relative;
+        border-radius: 0;
+        width: 100vw;
+        top: -50px;
+        transition: 3s;
+      }
+      
+    }
+  </style>
+</head>
+<body>
+ <div id="container">
+  <img id="img1" src="assets/images/image-omelette.jpeg" alt="an ommelete wrapping a mix of green vegetables.">
+  <h1 id="h" class="head">Simple Omelette Recipe</h1>
+  <p>  An easy and quick dish, perfect for any meal. This classic omelette combines beaten eggs cooked 
+    to perfection, optionally filled with your choice of cheese, vegetables, or meats.
+  </p>
+  <div id="box">
+    <h3>Preparation time</h3>
+  <ul>
+    <li>  <strong>Total:</strong> Approximately 10 minutes</li>
+    <br>
+    <li>  <strong>
+      Preparation:
+    </strong> 5 minutes</li>
+    <br>
+    <li>  <strong>Cooking:</strong> 5 minutes</li>
+  </ul>
+  </div>
+  
+    <h2 class="head">Ingredients</h2>
+  <ul>
+    <li>  2-3 large eggs</li>
+    <br>
+    <li>  Salt, to taste</li>
+    <br>
+    <li>  Pepper, to taste</li>
+    <br>
+    <li>  1 tablespoon of butter or oil</li>
+    <br>
+    <li>  Optional fillings: cheese, diced vegetables, cooked meats, herbs</li>
+  </ul>
+  
+    <h2 class="head">Instructions</h2>
+  
+  <ol>
+    <li> <strong>Beat the eggs</strong>: In a bowl, beat the eggs with a pinch of salt and pepper until they are well mixed. 
+      You can add a tablespoon of water or milk for a fluffier texture.
+    </li>
+    <br>
+    <li>
+      <strong>Heat the pan</strong>: Place a non-stick frying pan over medium heat and add butter or oil.
+    </li>
+    <br>
+    <li>  <strong>Cook the omelette</strong>: Once the butter is melted and bubbling, pour in the eggs. Tilt the pan to ensure 
+      the eggs evenly coat the surface.
+    </li>
+    <br>
+    <li>
+      <strong>Add fillings (optional)</strong>: When the eggs begin to set at the edges but are still slightly runny in the 
+    middle, sprinkle your chosen fillings over one half of the omelette.
+    </li>
+    <br>
+    <li><strong>Fold and serve</strong>: As the omelette continues to cook, carefully lift one edge and fold it over the 
+      fillings. Let it cook for another minute, then slide it onto a plate.
+    </li>
+    <br>
+    <li>
+      <strong>Enjoy</strong>: Serve hot, with additional salt and pepper if needed.
+    </li>
+  </ol>
+  <hr>
+  
+  
+    <h2 class="head">  Nutrition</h2>
+  
+  <p>  The table below shows nutritional values per serving without the additional fillings.</p>
+  <br>
+  <table>
+    <tr>
+      <td>Calories</td>
+      <th>277kcal</th>
+    </tr>
+    <tr>
+      <td>Carbs</td>
+      <th>0g</th>
+    </tr>
+    <tr>
+      <td>Protein</td>
+      <th>20g</th>
+    </tr>
+    <td>Fat</td>
+    <th>22g</th>
+  </table>
+  <br>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="https://github.com/r-dep">r-jdep</a>.
+    </div>
+   
+ </div>
+</body>
+</body>
+</html>
